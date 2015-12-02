@@ -1,6 +1,11 @@
 $(document).ready(function () {
+	//-----------------------------------------FizzBuzz Begin
     $('#button').click(function () {
-        for (var i = 1; i <= 100; i++) {
+    	//-----------------------------------------Input Begin
+    	var num = $('#add').val();
+
+		//-----------------------------------------Input End
+        for (var i = 1; i <= num; i++) {
             if (i % 15 === 0) {
                 $('#list').append('</br>' + 'FizzBuzz')
             } else if (i % 5 === 0) {
@@ -13,4 +18,5 @@ $(document).ready(function () {
             }
         }
 	});
+	//-----------------------------------------FizzBuzz End
 });
